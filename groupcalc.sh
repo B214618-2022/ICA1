@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DATASOURCE="/localdisk/data/BPSM/ICA1"
+
 #This script first allows the user to select from a list of available parameters, forming two groups, then uses those groups to perform a fold difference calculation - fold difference of group 2 to group 1
 
 echo 'Group 1 parameter selection. Please note, selecting all of one type e.g. Clone1, Clone2 and WT, will effectively select the entire set'
@@ -61,10 +63,10 @@ rm group2choices
 
 
 #Defining the groups based on two wordfiles containing group terms
-SEARCHIDS1=$(grep -Fw -f group1choicescol fastq/Tco.fqfiles | cut -f1 | grep -oP "[0-9]{4,}")
-SEARCHIDS2=$(grep -Fw -f group2choicescol fastq/Tco.fqfiles | cut -f1 | grep -oP "[0-9]{4,}")
+SEARCHIDS1=$(grep -Fw -f group1choicescol readdata/Tco.fqfiles | cut -f1 | grep -oP "[0-9]{4,}")
+SEARCHIDS2=$(grep -Fw -f group2choicescol readdata/Tco.fqfiles | cut -f1 | grep -oP "[0-9]{4,}")
 
-GENOMEBED="/localdisk/home/s1653324/ICA1/TriTrypDB-46_TcongolenseIL3000_2019.bed"
+GENOMEBED="/localdisk/data/BPSM/ICA1/TriTrypDB-46_TcongolenseIL3000_2019.bed"
 
 #making files that consist of single columns of expression counts for the first group
 mkdir cutfiles
