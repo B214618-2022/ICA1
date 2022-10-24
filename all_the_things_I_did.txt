@@ -1,0 +1,120 @@
+commit 60380df7e7d45f98fd4b113395a59151e77ef852
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 13:36:54 2022 +0100
+
+    Final versions of all files added
+
+commit 0fa7bd4b1250cdeb3c3c849b3f793148e19a6163
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 10:55:08 2022 +0100
+
+    choose script removed, has been merged with another script...
+
+commit ec33c2e8f7e25512ee04052ce05f1a245652725d
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 10:54:35 2022 +0100
+
+    analysis tool merged with find parameters script, groupcalc merged with choose script...
+
+commit 15569d51c0c34bcc8e2d09333cb4d8ce056b0404
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 10:13:42 2022 +0100
+
+    finalizing the choose script
+
+commit 67a2f55b38d0cfe79c1678679a1d3575cc69d6a6
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 10:01:51 2022 +0100
+
+    refining the choosing script
+
+commit b96da409358c2cb7edae3100a2c12f3a6725c296
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 09:55:29 2022 +0100
+
+    added a script to allow users to choose parameters for groupwise analysis
+
+commit c36070016b76623fd6821fb88293b5f775294ae6
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 08:28:41 2022 +0100
+
+    groupcalc finalised, last change was to produce the group mean tables. Updates to analysis tool and find parameters scripts added
+
+commit 4441be14057a76a635c59e23667b5773c3efd368
+Author: B214618 <email not provided>
+Date:   Mon Oct 24 08:16:42 2022 +0100
+
+    completed my implementation of the group calculator – put any groups from the list into files 1 and 2, and it will give you the fold change from 1 to 2.
+
+commit 00d5470942b92a9460327f6ea79ed6dc5e8728d5
+Author: B214618 <email not provided>
+Date:   Sun Oct 23 19:43:29 2022 +0100
+
+    script to find the unique group parameters
+
+commit 587783fd4532b9f2e3dbf89b34208891ca076b0b
+Author: B214618 <email not provided>
+Date:   Sun Oct 23 19:08:38 2022 +0100
+
+    wrote an awk script for calculating the fold change from column 1 to column 2
+
+commit cb6732b3fd7312f1a7d324a144078f9e2fd768ef
+Author: B214618 <email not provided>
+Date:   Sun Oct 23 17:59:36 2022 +0100
+
+    testing the methods for finding the means of two combined groups
+
+commit cca58775eecfcd6dd7606123948fd81bf8ce211e
+Author: B214618 <email not provided>
+Date:   Sun Oct 23 17:50:29 2022 +0100
+
+    using a slightly unorthodox solution to get a table of counts now
+
+commit fea246be9c1c2ff24501050555b4250e32e1dd54
+Author: B214618 <email not provided>
+Date:   Sun Oct 23 16:42:19 2022 +0100
+
+    consolidated the column and variable scripts into one script. Updated variable script to only exctract IDs and not the Tco part.
+
+commit 90a57c956cd9b3606156262605e12590bafcf50e
+Author: B214618 <email not provided>
+Date:   Sun Oct 23 16:14:50 2022 +0100
+
+    Working on presenting the final analysis, playing around with variables and tables
+
+commit 8907724bb9d11a6579f2262ecde9f7ad670052b8
+Author: B214618 <email not provided>
+Date:   Sun Oct 23 12:30:27 2022 +0100
+
+    Lots of work has been done – two new scripts written, one for analysing the .fq files and outputting an intersect count file, and the other for generating a csv report of the fastqc analysis.
+
+commit ff4f7f3f564b4b6d2d22908d4b562eed0b627ed9
+Author: B214618 <email not provided>
+Date:   Fri Oct 21 20:27:50 2022 +0100
+
+    updated script
+
+commit 4cc9651841ea385cc9de5246249779a427fc9c44
+Author: B214618 <email not provided>
+Date:   Fri Oct 21 20:26:26 2022 +0100
+
+    Added gitignore for any temp files that might be created. Updates made to script, now able to parse a parameter consisting of a path to a directory and process all the fq.gz files in the directory, outputting and extracting to a temporary directory with option to delete after.
+
+commit 32b7a6d9d66aef965490d4e2318d448583cede49
+Author: B214618 <email not provided>
+Date:   Fri Oct 21 16:36:00 2022 +0100
+
+    Added basic script for creating a temp directory, with commented out cleanup function at the end. next will be to add functionality for automatically doing fastqc and putting the output files in the temp directory
+
+commit f13a7f60f4253b49002ee027d75280d3ca6dcf55
+Author: B214618 <email not provided>
+Date:   Fri Oct 21 15:55:57 2022 +0100
+
+    confirmed repository works, removing test file
+
+commit 471df4cbb5c97861f33cbe8f713aa0cfe06cfe1a
+Author: B214618 <email not provided>
+Date:   Fri Oct 21 15:53:21 2022 +0100
+
+    Testing repository creation
+

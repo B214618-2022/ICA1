@@ -1,0 +1,9 @@
+Welcome to this very barebones readme.
+
+To use this program, first run the analysistool.sh script. This assumes that the files are located in /localhost/data... If they are somewhere else, you will have to change the location in the script.
+
+the awk script is not to be run by itself, it is referenced in the groupcalc.sh cript
+
+the groupcalc.sh script performs post analysis calcualtions on the data for groupwise analysis.
+
+
