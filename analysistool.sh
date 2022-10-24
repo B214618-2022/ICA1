@@ -1,11 +1,18 @@
 #!/bin/bash
 
+# Finding the directory of the script...
+DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Creating a unique temporary directory
+ANALYSIS_DIR=`mktemp -d -p "$DIRECTORY"`
+
 #extracts IDs from folder of reads
 #ls fastq/ | grep -oP "(?<=\-)(.*?)(?=\_)" > read_ids
 
+
 #Builds the index
-bowtie2-build /localdisk/data/BPSM/ICA1/Tcongo_genome/TriTrypDB-46_TcongolenseIL3000_2019_Genome.fasta.gz genome.fa
-echo "index generated..."
+#bowtie2-build /localdisk/data/BPSM/ICA1/Tcongo_genome/TriTrypDB-46_TcongolenseIL3000_2019_Genome.fasta.gz genome.fa
+#echo "index generated..."
 
 echo "analysing reads..."
 analysis(){
@@ -28,4 +35,9 @@ for file in fastq/*1.fq; do #note, the 1.fq pattern is just to make sure it does
 done
 
 wait
+
+awk 'NR>1 {print $2 "\n Time" $4 "\n" $5}' $DIRECTORY/fastq/Tco.fqfiles > parameterlist.txt
+awk '{ a[$1]++ } END { for (b in a) { print b } }' parameterlist.txt > uniq_params
+rm parameterlist.txt
+
 echo "analysis complete"
