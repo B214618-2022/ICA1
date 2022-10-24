@@ -42,7 +42,10 @@ rm group2counts
 #putting the means in two columns
 paste group1means group2means > g1xg2
 
-#tidying up
+#Creating the group 1 and 2 mean count tables, and cleaning up..
+paste $GENOMEBED group1means > Group_1
+paste $GENOMEBED group2means > Group_2
+
 rm group1means
 rm group2means
 

@@ -4,8 +4,8 @@
 #ls fastq/ | grep -oP "(?<=\-)(.*?)(?=\_)" > read_ids
 
 #Builds the index
-#bowtie2-build /localdisk/data/BPSM/ICA1/Tcongo_genome/TriTrypDB-46_TcongolenseIL3000_2019_Genome.fasta.gz genome.fa
-#echo "index generated..."
+bowtie2-build /localdisk/data/BPSM/ICA1/Tcongo_genome/TriTrypDB-46_TcongolenseIL3000_2019_Genome.fasta.gz genome.fa
+echo "index generated..."
 
 echo "analysing reads..."
 analysis(){
